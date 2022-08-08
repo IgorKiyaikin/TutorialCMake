@@ -16,6 +16,7 @@ configure_file(TutorialConfig.h.in TutorialConfig.h)
 
 # add the MathFunctions library
 if(USE_MYMATH)
+add_subdirectory(MathFunctions)
   list(APPEND EXTRA_LIBS MathFunctions)
   list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
 endif()
@@ -40,7 +41,7 @@ install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
 include(CTest)
 
 # does the application run
-add_test(NAME Runs COMMAND Tutorial6 25)
+add_test(NAME Runs COMMAND Tutorial 25)
 
 # does the usage message work?
 add_test(NAME Usage COMMAND Tutorial6)
