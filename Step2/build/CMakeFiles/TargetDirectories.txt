@@ -1,3 +1,0 @@
-/home/igor/CMake_tutorial/tutorial/Step2/build/CMakeFiles/rebuild_cache.dir
-/home/igor/CMake_tutorial/tutorial/Step2/build/CMakeFiles/edit_cache.dir
-/home/igor/CMake_tutorial/tutorial/Step2/build/CMakeFiles/Tutorial.dir
