@@ -28,7 +28,6 @@ target_link_libraries(Tutorial6 PUBLIC ${EXTRA_LIBS})
 # so that we will find TutorialConfig.h
 target_include_directories(Tutorial6 PUBLIC
                            "${PROJECT_BINARY_DIR}"
-                            ${EXTRA_INCLUDES}
                            )
 
 # add the install targets
@@ -41,7 +40,7 @@ install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
 include(CTest)
 
 # does the application run
-add_test(NAME Runs COMMAND Tutorial 25)
+add_test(NAME Runs COMMAND Tutorial6 25)
 
 # does the usage message work?
 add_test(NAME Usage COMMAND Tutorial6)
